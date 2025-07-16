@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">My Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-blue-500 transition duration-300">Home</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-blue-500 transition duration-300">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-500 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <img src="images/eid_green_square.jpg" alt="Avatar" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Basith Ali KP</h1>
+            <p class="text-xl md:text-2xl mb-4">Web Developer & Designer</p>
+            <p class="text-lg italic mb-6">"Crafting digital experiences with passion and precision."</p>
+            <a href="resume.pdf" download class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-300">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- About Description -->
+                <div class="md:w-1/2 bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Who I Am</h3>
+                    <p class="text-gray-600 mb-4">
+                        I'm a passionate web developer with a keen interest in creating user-friendly and visually appealing websites. With a background in computer science, I love solving problems and bringing ideas to life through code.
+                    </p>
+                    <p class="text-gray-600">
+                        My goal is to build seamless digital experiences that make a difference. In my free time, I enjoy exploring new technologies and contributing to open-source projects.
+                    </p>
+                </div>
+                <!-- Skills and Timeline -->
+                <div class="md:w-1/2 flex flex-col gap-8">
+                    <!-- Skills -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Skills</h3>
+                        <ul class="grid grid-cols-2 gap-4 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-blue-500"></i> HTML</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-blue-500"></i> CSS</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-blue-500"></i> JavaScript</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-blue-500"></i> Tailwind CSS</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-blue-500"></i> React</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-blue-500"></i> Git</li>
+                        </ul>
+                    </div>
+                    <!-- Timeline -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Education & Experience</h3>
+                        <ul class="space-y-4 text-gray-600">
+                            <li>
+                                <h4 class="font-semibold">B.Tech in Computer Science</h4>
+                                <p>Kalam Technical University, 2024-28</p>
+                            </li>
+                            <li>
+                                <h4 class="font-semibold">Web Developer Intern</h4>
+                                <p>Tech Corp, Summer 2024</p>
+                            </li>
+                            <li>
+                                <h4 class="font-semibold">Freelance Web Developer</h4>
+                                <p>2024-Present</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-lg transition duration-300">
+                    <img src="images/netflix.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Netflix Clone</h3>
+                        <p class="text-gray-600 mb-4">A fully responsive Netflix clone built with HTML, CSS, and JavaScript. Features modern and better GUI.</p>
+                        <a href="https://github.com/basithalikp/netflix-frontend" target="_blank" class="text-blue-500 hover:underline">GitHub Repo</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-lg transition duration-300">
+                    <img src="images/google.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Google Frontend</h3>
+                        <p class="text-gray-600 mb-4">A cool and not so boring Google frontend alternative built on HTML and CSS</p>
+                        <a href="https://github.com/basithalikp/Google" target="_blank" class="text-blue-500 hover:underline">GitHub Repo</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-lg transition duration-300">
+                    <img src="images/hostel_management.png" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Hostel Management Porttal</h3>
+                        <p class="text-gray-600 mb-4">A mock hostel management portal built using plain HTML, CSS and JS. Still on development.</p>
+                        <a href="https://github.com/basithalikp/hostel_management" target="_blank" class="text-blue-500 hover:underline">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Me</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-600 mb-2">Name</label>
+                        <input type="text" id="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-600 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-600 mb-2">Message</label>
+                        <textarea id="message" rows="5" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-300">Submit</button>
+                </form>
+                <!-- Social Media Icons -->
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="https://github.com/basithalikp" target="_blank" class="text-gray-600 hover:text-blue-500 transition duration-300"><i class="fab fa-github text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/basithalikp/" target="_blank" class="text-gray-600 hover:text-blue-500 transition duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="https://twitter.com/_basithalikp" target="_blank" class="text-gray-600 hover:text-blue-500 transition duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="https://www.reddit.com/user/Ambitious_Fee_5818/" target="_blank" class="text-gray-600 hover:text-blue-500 transition duration-300"><i class="fab fa-reddit text-2xl"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Basith Ali KP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
